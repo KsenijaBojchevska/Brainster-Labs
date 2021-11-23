@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/2adeb4644b.js" crossorigin="anonymous"></script>
+  <title>Hire students</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-yellow shadow">
+    <a class="navbar-brand  text-dark text-center text-uppercase fs1 fw-bold ms-0 widthQuery" href="index.html"> <img
+        src="img/Logo.png " class="w-25 "><br>
+      Brainster</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i id="navbar-toggle-icon" class="bi bi-list white"></i>
+
+    </button>
+
+
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto spec-efect-nav textLeft">
+        <li class="navbar-item  ">
+          <a class="nav-link text-dark white fw-bold fs" href="https://marketpreneurs.brainster.co">Академија за
+            маркетинг</a>
+        </li>
+        <li class="navbar-item ">
+          <a class="nav-link text-dark white fw-bold fs " href="https://codepreneurs.brainster.co">Академија за
+            програмирање</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link text-dark white fw-bold fs " href="https://datascience.brainster.co">Академија
+            за data science</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link text-dark white fw-bold fs " href="https://design.brainster.co">Академија за дизајн</a>
+        </li>
+
+      </ul>
+      <form class="form-inline ms-md-3 ml-md-0 ps-md-0  ps-4 mr-50">
+        <a href="hirestudents.html" class="btn btn-red text-light fs buttonQuery ">Вработи наш студент</a>
+      </form>
+    </div>
+
+  </nav>
+
+
+
+
+
+
+  <div class="container-fluid bg-yellow  ">
+    <div class="row  pb-md-5">
+      <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1 ">
+        <div class="py-md-5">
+          <h1 class="text-center text-dark fw-bold display-3 py-5 ">Вработи студенти</h1>
+        </div>
+
+
+        <form method="POST" action="insert.php">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 py-2">
+              <label for="fullName" class="form-label text-dark fw-bold">Име и презиме</label>
+              <input type="text" name="firstandlastname" id="fullName" class="form-control btn-shadow" id="exampleFormControlInput1"
+                placeholder="Вашето име и презиме" required>
+            </div>
+            <div class="col-md-6 col-sm-12 py-2">
+              <label for="comname" class="form-label text-dark fw-bold ">Име на компанија</label>
+              <input type="text" name="companyName" id="comname" class="form-control btn-shadow" id="exampleFormControlInput2"
+                placeholder="Име на вашата компанија" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 py-2">
+              <label for="mail" class="form-label text-dark fw-bold">Контакт имејл</label>
+              <input type="email" name="email" id="mail" class="form-control btn-shadow" id="exampleFormControlInput3"
+                placeholder="Контакт имејил на вашата компанија" required>
+            </div>
+            <div class="col-md-6 col-sm-12 py-2">
+              <label for="mobnum" class="form-label text-dark fw-bold ">Контакт телефон</label>
+              <input type="phone" name="phone" id="mobnum" class="form-control btn-shadow" id="exampleFormControlInput4"
+                placeholder="Контакт телефон на вашата компанија" required>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-md-6 col-sm-12 pt-2  marginB">
+              <label for="exampleFormControlInput" class="form-label text-dark fw-bold ">Тип на студенти</label>
+
+              <div class="dropdown btn-shadow ">
+
+
+                <div class="d-grid gap-2 ">
+
+                  <button id="studenttupe" class="btn dropdown text-start bg-white" type="button"
+                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Изберете тип на студент</span>
+                    <i class="fas fa-angle-down float-end"></i>
+                    <div class="clearfix"></div>
+                  </button>
+
+
+
+                  <ul class="dropdown-menu w-100 mt-3 " aria-labelledby="dropdownMenuButton" name="typeOfStudents">
+                    <li>
+                      <a class="dropdown-item" href="#" value="studentsOfMarketing">Студенти од маркетинг</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#" value="studentsOfPrograming">Студенти од програмирање</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" value="studentsOfDataScience">Студенти од data science</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" value="studentsOfDesign">Студенти од дизајн</a>
+                    </li>
+                    <li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="col-md-6 col-sm-12  pt-2 pb-5">
+              <div class="d-grid gap-2 mt-2">
+                <button class="btn btn-red fw-bold text-light text-uppercase mt-4 btn-shadow" type="submit"
+                  value="Submit">Испрати</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row bg-dark">
+      <div class="col-12 pt-2">
+        <div class="py-1">
+          <h6 class="text-center text-light text-shadow">Изработено со &#10084; од студентите на Brainster</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.querySelector(".navbar-toggler").addEventListener("click", toggleLogo);
+
+    function toggleLogo() {
+      var logoVisibility = document.querySelector(".navbar-brand").style.visibility;
+      if (logoVisibility == 'visible' || logoVisibility == '') {
+        document.querySelector(".navbar-brand").style.visibility = "hidden";
+      } else {
+        document.querySelector(".navbar-brand").style.visibility = "visible";
+      }
+
+      document.querySelector("#navbar-toggle-icon").classList.toggle('bi-list');
+      document.querySelector("#navbar-toggle-icon").classList.toggle('bi-x');
+
+      document.querySelector("#navbar").classList.toggle('nav-shown');
+    }
+
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+
+
+
+    </script>
+
+
+</body>
+
+</html>

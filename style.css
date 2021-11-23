@@ -1,0 +1,220 @@
+.bg-yellow{
+    background-color:gold ;
+}
+
+
+.fs1{
+    font-size: 13px;
+}
+
+
+.btn-red{
+    background-color:red;
+}
+
+
+  .jumbotron-image1{
+    background-image: url(img/Bussiness-management-software.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    height: 500px;
+    opacity: 0.9;
+  }
+  .borderRight{
+    border-right: 1px solid grey;
+  }
+ 
+
+ .fs2{
+    font-size: 20px;  
+ }
+
+ .fs3{
+  font-size: 16px; 
+  font-weight: bold; 
+}
+.fs4{
+  font-size: 30px;
+}
+
+ .card-img-top{
+ height: 25vh;
+  object-fit:fill;
+}
+
+
+.card-rounded{
+  border-radius: 3%;
+}
+.img-rounded{
+  border-radius: 3%;
+}
+
+.card-shadow{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.btn-shadow{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4), 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.shadow{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.1);
+}
+
+h1, .text-shadow {
+  color:black;
+  text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.mr-50{
+  margin-right: 50px;
+}
+
+.spec-efect-nav {
+  text-align: center;
+  font-size: 16px;
+}
+.spec-efect-nav {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.spec-efect-nav li {
+  display: inline-block;
+ 
+  margin: 0.3em 0.7em;
+  padding: 0;
+}
+.spec-efect-nav a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.spec-efect-nav a:before,
+.spec-efect-nav a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color:red;
+  width: 0;
+}
+.spec-efect-nav a:before {
+  top: 0;
+  left: 0;
+}
+.spec-efect-nav a:after {
+  bottom: 0;
+  right: 0;
+}
+.spec-efect-nav a:hover,
+.spec-efect-nav .current a {
+  color: #ffffff;
+}
+.spec-efect-nav a:hover:before,
+.spec-efect-nav .current a:before,
+.spec-efect-nav a:hover:after,
+.spec-efect-nav .current a:after {
+  width: 90%;
+}
+.marginB{
+  margin-bottom: 26vh;
+}
+
+input[type='checkbox']{
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+.checked {
+  background-color: red;
+  color: black !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+ .pt-40{
+   padding-top:40px;
+ }
+
+.hover-red:hover {
+  color: black;
+  background-color: red;
+  
+}
+
+.hover-red label:hover {
+  color: black !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media   (max-width: 991.98px)  {
+  .nav-shown {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      align-items: flex-start;
+      align-content: flex-start;
+      background-color: black;
+      
+      text-align: left;
+      height: 100vh !important;
+
+  }
+  .white{
+    color:white !important;
+  } 
+  .textLeft{
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .buttonQuery{
+    margin: 2vh !important;
+    
+  }
+  .widthQuery{
+    width: 40%;
+    font-size: 8px;
+  }
+  .marginB{
+    margin-bottom: 46vh;
+  }
+  
+
+.fs3{
+  font-size: 13px; 
+  font-weight: bold; 
+}
+.jumbotron-image1{
+  height: 300px;
+}
+
+}
+
+
+
+
+
+
+
